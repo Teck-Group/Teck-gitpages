@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Admin login</title>
     <link rel="stylesheet" href="/Teck-gitpages/css/style.css"/> 
+    <link rel="icon" type="image/png" href="/Teck-gitpages/images/teck-logo.png"/>
 </head>
 <body>
-    <h1>Welcome to the Admin Dashboard </h1>
-    <nav>
-        <ul>
-            <li><a href="users.html">Manage Users</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="reports.html">View Reports</a></li>
-        </ul>  
-    </nav>
-    <section>
-        <h2>Dashboard Overview</h2>
-        <p>Here you can find an overview of the system's performance and recent activities.</p>
-        <!-- Dashboard content goes here -->
-    </section>
+    <h1>Admin Login</h1>
+    <form action="dashboard.html" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
 </body>
 </html>
